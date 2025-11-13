@@ -1,28 +1,37 @@
 // tailwind.config.js
 /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#f0f9ff',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
+        neo: {
+          black: '#0a0a0a',
+          cyan: '#00f2fe',
+          purple: '#4facfe'
         },
-        dark: {
-          800: '#1f2937',
-          900: '#111827',
+        aurora: {
+          pink: '#ff6b9d',
+          blue: '#74ebd5',
+          purple: '#9face6'
+        },
+        solar: {
+          white: '#ffffff',
+          gray: '#f8fafc',
+          dark: '#1e293b'
         }
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Space Grotesk', 'monospace']
+      },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-in': 'slideIn 0.3s ease-out',
+        'float': 'float 6s ease-in-out infinite',
+        'glow': 'glow 2s ease-in-out infinite alternate',
       }
     },
   },
